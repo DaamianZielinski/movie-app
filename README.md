@@ -1,7 +1,7 @@
-# Boilerplate app 
+# Movie App 
 
 To start working with this app run once
-`git clone git@bitbucket.org:Zdamian/first-repo.git`
+`git@github.com:damianzielin/movie-app.git`
 next run 
 `npm install`
 
