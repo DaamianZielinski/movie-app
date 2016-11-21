@@ -7,20 +7,35 @@
         <link rel="stylesheet" type="text/css" href="/app/css/movie.css">
     </head>
     <body>
-        <div class="container">
+        <div class="container-fluid">
             <div class="row">
                 <div class="col-md-12">
                     <header class="text-center">
-                        <h1>Movie app</h1>
+                        <h1 class="text-left">Movie app</h1>
                     </header>
+                    <div class="col-md-6 col-md-offset-3">
+                        <ul class="nav nav-tabs nav-justified" role="tablist">
+                            <li role="presentation" class="active">
+                                <a href="#home" aria-controls="home" role="tab" data-toggle="tab">Home</a>
+                            </li>
+                            <li role="presentation">
+                                <a href="#list_of_movies" aria-controls="list_of_movies" role="tab" data-toggle="tab">List of Movies</a>
+                            </li>
+                            <li role="presentation">
+                                <a href="#add_movie" aria-controls="add_movie" role="tab" data-toggle="tab">Add movie</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-            <div class="row">
+        </div>
+        <div class="container">
+            <div id="list_of_movies" class="row">
                 <div class="col-md-12">
                     <ul class="list-unstyled" id="movie-list"></ul>
                 </div>
             </div>
-            <div class="row panel panel-default">
+            <div id="add_movie" class="row panel panel-default">
                 <div class="col-md-12 panel-body">
                     <form class="form-horizontal">
                         <div class="form-group form-group-md">
