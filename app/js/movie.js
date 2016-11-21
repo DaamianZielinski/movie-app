@@ -19,19 +19,19 @@ $(function() {
                             <img class="img-responsive" src="' + movie.Poster + '"> \
                         </div> \
                         <div class="col-md-9"> \
-                            <div class="row"> \
+                            <div class="row bg-primary"> \
                                 <div class="col-md-9">' + movie.Title + ' (' + movie.Year + ')</div> \
-                                <div class="col-md-3">' + movie.imdbRating + '</div> \
+                                <div class="col-md-3"><span class="glyphicon glyphicon-star"></span>' + movie.imdbRating + '</div> \
                             </div> \
-                            <div class="row"> \
-                                <div class="col-md-9">' + movie.Director.join(', ') + '</div> \
+                            <div class="row panel-body"> \
+                                <div class="col-md-9">' + 'Director: ' + movie.Director.join(', ') + '</div> \
                                 <div class="col-md-3">' + movie.Genre.join(', ') + '</div> \
                             </div> \
-                            <div class="row"> \
-                                <div class="col-md-12">' + movie.Actors.join(', ') + '</div> \
+                            <div class="row panel-body"> \
+                                <div class="col-md-12">' + 'Actors: ' + movie.Actors.join(', ') + '</div> \
                             </div> \
-                            <div class="row"> \
-                                <div class="col-md-9">' + movie.Plot + '</div> \
+                            <div class="row panel-body"> \
+                                <div class="col-md-9 text-primary">' + movie.Plot + '</div> \
                                 <div class="col-md-3"> \
                                     <iframe width="100%" src="https://www.youtube.com/embed/' + movie.Trailer + '" frameborder="0" allowfullscreen></iframe> \
                                 </div> \
@@ -77,4 +77,9 @@ $(function() {
     };
 
     App.init();
+
+    $('#myTabs a').click(function(e) {
+        e.preventDefault()
+        $(this).tab('show')
+    })
 });
