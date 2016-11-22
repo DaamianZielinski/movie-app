@@ -7,7 +7,7 @@
         <link rel="stylesheet" type="text/css" href="/app/css/movie.css">
     </head>
     <body>
-        <div class="container-fluid">
+        <div class="container-fluid tab-content">
             <div class="row">
                 <div class="col-md-12">
                     <header class="text-center">
@@ -16,10 +16,7 @@
                     <div class="col-md-6 col-md-offset-3">
                         <ul class="nav nav-tabs nav-justified" id="myTabs" role="tablist">
                             <li role="presentation" class="active">
-                                <a href="#home" aria-controls="home" role="tab" data-toggle="tab">Home</a>
-                            </li>
-                            <li role="presentation">
-                                <a href="#list_of_movie" aria-controls="list_of_movie" role="tab" data-toggle="tab">List of movie</a>
+                                <a href="#movies" aria-controls="movies" role="tab" data-toggle="tab">Movies</a>
                             </li>
                             <li role="presentation">
                                 <a href="#add_movie" aria-controls="add_movie" role="tab" data-toggle="tab">Add movie</a>
@@ -28,57 +25,28 @@
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="container tab-content">
-            <div role="tabpanel" id="home" class="row tab-pane panel-body active">
-                <div class="col-md-12">
-                    <div class="row panel-body panel">
-                        <div class="col-md-2 col-md-offset-1">
-                        </div>
-                        <div class="col-md-2">
-                        </div>
-                        <div class="col-md-2">
-                        </div>
-                        <div class="col-md-2">
-                        </div>
-                        <div class="col-md-2">
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-12">
-                    <ul class="list-unstyled nav nav-tabs">
-                        <li role="presentation" class="active">
-                            <a href="#">Last Added
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-md-12">
-                    <ul class="list-unstyled" id="last_added"></ul>
-                </div>
-            </div>
-            <div role="tabpanel" id="list_of_movie" class="row tab-pane panel panel-body">
-                <div class="col-md-12">
+            <div role="tabpanel" id="movies" class="row tab-pane panel panel-body active">
+                <div class="col-md-8 col-md-offset-2">
                     <ul class="list-unstyled" id="movie-list"></ul>
                 </div>
             </div>
             <div role="tabpanel" id="add_movie" class="row panel panel-body tab-pane">
-                <div class="col-md-12 panel panel-body panel-default">
+                <div class="col-md-8 col-md-offset-2 panel panel-body panel-default">
                     <form class="form-horizontal">
                         <div class="form-group form-group-md">
-                            <label class="col-md-3 control-label">Title</label>
+                            <label class="col-md-1 col-md-offset-1 control-label">Title</label>
                             <div class="col-md-9">
                                 <input class="form-control" type="text">
                             </div>
                         </div>
                         <div class="form-group form-group-md">
-                            <label class="col-md-3 control-label">Released</label>
+                            <label class="col-md-1 col-md-offset-1 control-label">Released</label>
                             <div class="col-md-9">
                                 <input class="form-control" type="text" placeholder="DD-MM-YY">
                             </div>
                         </div>
                         <div class="form-group form-group-md">
-                            <label class="col-md-3 control-label">Type of movie</label>
+                            <label class="col-md-1 col-md-offset-1 control-label">Type of movie</label>
                             <div class="col-md-9">
                                 <select class="form-control" size="3" multiple="multiple">
                                     <option value="Drama">Drama</option>
@@ -110,54 +78,54 @@
                             </div>
                         </div>
                         <div class="form-group form-group-md">
-                            <label class="col-md-3 control-label">Country</label>
+                            <label class="col-md-1 col-md-offset-1 control-label">Country</label>
                             <div class="col-md-9">
                                 <input class="form-control" type="text" placeholder="e.g: USA, Germany">
                             </div>
                         </div>
                         <div class="form-group form-group-md">
-                            <label class="col-md-3 control-label">Director</label>
+                            <label class="col-md-1 col-md-offset-1 control-label">Director</label>
                             <div class="col-md-9">
                                 <input class="form-control" type="text" placeholder="e.g: Michael Bay">
                             </div>
                         </div>
                         <div class="form-group form-group-md">
-                            <label class="col-md-3 control-label">Writer</label>
+                            <label class="col-md-1 col-md-offset-1 control-label">Writer</label>
                             <div class="col-md-9">
                                 <input class="form-control" type="text" placeholder="e.g: Roberto Orci">
                             </div>
                         </div>
                         <div class="form-group form-group-md">
-                            <label class="col-md-3 control-label">Actors</label>
+                            <label class="col-md-1 col-md-offset-1 control-label">Actors</label>
                             <div class="col-md-9">
                                 <input class="form-control" type="text" placeholder="e.g: Shia LaBeouf, Megan Fox">
                             </div>
                         </div>
                         <div class="form-group form-group-md">
-                            <label class="col-md-3 control-label">Run Time</label>
+                            <label class="col-md-1 col-md-offset-1 control-label">Run Time</label>
                             <div class="col-md-9">
                                 <input class="form-control" type="text" placeholder="e.g: 90 min">
                             </div>
                         </div>
                         <div class="form-group form-group-md">
-                            <label class="col-md-3 control-label">Poster</label>
+                            <label class="col-md-1 col-md-offset-1 control-label">Poster</label>
                             <div class="col-md-9">
                                 <input class="form-control" type="text" placeholder="paste URL to poster">
                             </div>
                         </div>
                         <div class="form-group form-group-md">
-                            <label class="col-md-3 control-label">Trailer</label>
+                            <label class="col-md-1 col-md-offset-1 control-label">Trailer</label>
                             <div class="col-md-9">
                                 <input class="form-control" type="text" placeholder="paste URL to Trailer from YouTube">
                             </div>
                         </div>
                         <div class="form-group form-group-md">
-                            <label class="col-md-3 control-label">Description</label>
+                            <label class="col-md-1 col-md-offset-1 control-label">Description</label>
                             <div class="col-md-9">
                                 <textarea class="form-control" rows="3"></textarea>
                             </div>
                         </div>
-                            <div class="col-md-1 col-md-offset-11">
+                            <div class="col-md-1 col-md-offset-10">
                                 <button type="submit" class="btn btn-primary btn-lg">Add</button>
                             </div>
                         </div>
