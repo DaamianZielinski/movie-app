@@ -11,5 +11,18 @@
   more info: http://www.findmebyip.com/litmus/#css3-properties
 
 ------------------------------------------------------------- */
+h2 {
+  display: inline-block;
+  margin: 20px 0 10px 0; }
+
+.bg-primary {
+  background-color: #0e2639; }
+  .bg-primary:hover {
+    background-color: #14344d;
+    cursor: pointer; }
+
 .glyphicon-star {
   color: yellow; }
+
+.rate {
+  font-size: 16px; }

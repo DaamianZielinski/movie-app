@@ -14,9 +14,9 @@ $(function() {
             _(Storage.movies).each(function(movie) {
 
                 var template = '<li class="row panel panel-default"> \
-                    <div class="panel-body"> \
+                    <div class="panel-body bg-primary"> \
                         <div class="col-md-2"> \
-                            <img class="img-responsive" src="' + movie.Poster + '"> \
+                            <img class="img-responsive thumbnail" src="' + movie.Poster + '"> \
                         </div> \
                         <div class="col-md-8"> \
                             <div class="row panel-body"> \
@@ -28,7 +28,7 @@ $(function() {
                             </div> \
                         </div> \
                         <div class="col-md-2"> \
-                            <div class="row panel-body"> \
+                            <div class="row panel-body rate"> \
                                 <div class="col-md-12 panel-body"><span class="glyphicon glyphicon-star"></span>' + movie.imdbRating + '</div> \
                                 <div class="col-md-12 panel-body">' + 'Votes: ' + movie.imdbVotes + '</div> \
                             </div> \
