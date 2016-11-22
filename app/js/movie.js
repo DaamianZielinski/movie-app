@@ -13,7 +13,7 @@ $(function() {
         render: function() {
             _(Storage.movies).each(function(movie) {
 
-                var template = '<li class="row panel panel-default"> \
+                var template = '<li class="row panel panel-default panel-body"> \
                     <div class="panel-body"> \
                         <div class="col-md-3"> \
                             <img class="img-responsive" src="' + movie.Poster + '"> \
