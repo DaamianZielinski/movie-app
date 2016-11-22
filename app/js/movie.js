@@ -15,10 +15,10 @@ $(function() {
 
                 var template = '<li class="row panel panel-default"> \
                     <div class="panel-body bg-primary"> \
-                        <div class="col-md-3"> \
+                        <div class="col-md-2"> \
                             <img class="img-responsive thumbnail" src="' + movie.Poster + '"> \
                         </div> \
-                        <div class="col-md-7"> \
+                        <div class="col-md-8"> \
                             <div class="row panel-body"> \
                                 <div class="col-md-12"><h2>' + movie.Title + '</h2>' + ' (' + movie.Year + ')</div> \
                                 <div class="col-md-12">' + 'Director: ' + movie.Director.join(', ') + '</div> \
