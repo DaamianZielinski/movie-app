@@ -1,5 +1,11 @@
 node_modules
+bower_components
 
-static/css/**/*.css
+app/css
+
+dist
+
+.tmp
+.sass-cache
 
 npm-debug.log

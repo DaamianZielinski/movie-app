@@ -1,22 +1,30 @@
 {
   "name": "movie-app",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "",
-  "main": "index.js",
   "scripts": {
-    "start": "npm run dev",
-    "dev": "lite-server"
+    "start": "npm run server",
+    "dev": "npm install && gulp build.dev && npm run server",
+    "prod": "npm install && gulp build.prod && npm run server",
+    "test": "karma start karma.conf.js",
+    "server": "lite-server"
   },
   "author": "",
-  "license": "ISC",
-  "devDependencies": {
-    "gulp": "^3.9.1",
-    "gulp-sass": "^2.3.2",
-    "lite-server": "^2.2.2"
-  },
   "dependencies": {
-    "bootstrap": "^3.3.7",
-    "jquery": "^3.1.1",
-    "underscore": "^1.8.3"
+    "angular": "^1.6.1",
+    "bootstrap": "^3.3.7"
+  },
+  "devDependencies": {
+    "angular-mocks": "^1.6.1",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-sass": "^2.3.2",
+    "gulp-sourcemaps": "^2.4.0",
+    "gulp-uglify": "^2.0.0",
+    "jasmine-core": "^2.5.2",
+    "karma": "^1.4.0",
+    "karma-chrome-launcher": "^2.0.0",
+    "karma-jasmine": "^1.1.0",
+    "lite-server": "^2.2.2"
   }
 }
